@@ -1,6 +1,5 @@
-import { useState } from "react";
 import headerLogo from "/src/assets/images/logo.svg";
-function Navbar({ setDdlUnit }) {
+function Navbar() {
   return (
     <>
       {" "}
@@ -23,7 +22,6 @@ function Navbar({ setDdlUnit }) {
             className="dropdown header__dropdown"
             name="units"
             id="ddlUnits"
-            onChange={(e) => setDdlUnit(e.target.value)}
           >
             <option value="">Units</option>
             <option value="C">&deg;C</option>
